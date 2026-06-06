@@ -1,0 +1,176 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100wh;
+    background-image: url(https://images.unsplash.com/photo-1542598972-0d766c1115fd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li {
+    display: inline;
+    padding: 25px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    /* border: none; */
+    border-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: purple;
+    border: none;
+}
+
+.login-form {
+    height: 400px;
+    width: 320px;
+    background-color: rgba(255,255,255,0.6);
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+#user-pic {
+    height: 5em;
+    width: 5em;
+    background-image: url(./assets/userpic.avif);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 7.2em;
+}
+
+.inputs {
+    position: absolute;
+    margin-top: 8em;
+}
+
+#email-inp, #password-inp {
+    margin-left: 2em;
+    width: 18em;
+    padding: 0.9em;
+    background-color: transparent   ;
+}
+
+#email-inp:hover, #password-inp:hover {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: purple;
+    font-weight: bold;
+}
+
+#forgot {
+    margin-left: 2.2em;
+    color: purple;
+}
+
+#forgot:hover, #checkbox-inp:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#checkbox-inp {
+    margin-left: 2em;
+}
+
+input[type="checkbox"]{
+  accent-color: purple;
+}
+
+label {
+    color: purple;
+}
+
+#login-btn {
+    background-color: purple;
+    color: #ffffff;
+    position: absolute;
+    margin-left: 1.9em;
+    width: 20em;
+    padding: 0.9em;
+    border: none;
+}
+
+.signup {
+    margin-left: 3.2em;
+}
+
+#signup {
+    color: green;
+    font-weight: bold;
+}
+
+#member {
+    color: purple;
+}
+
+#email-icon, #password-icon {
+    position: absolute;
+    margin-left: 2.3em;
+    margin-top: 0.8em;
+    color: black;
+}
+
+/* media queries */
+@media screen and (max-width:768px) {
+
+    .login-form {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    ul li {
+        display: none;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .login-form {
+        width: 300px;
+    }
+
+    #email-inp,  #password-inp {
+        width: 16em;
+    }
+
+    #login-btn {
+        width: 18em;
+    }
+
+    #forgot {
+        margin-left: 5.5em;
+        font-size: 0.9em;
+    }
+    
+    label {
+        font-size: 0.8em;
+    }
+}

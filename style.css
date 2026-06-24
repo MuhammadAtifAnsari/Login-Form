@@ -3,23 +3,36 @@ body {
     padding: 0%;
     height: 100vh;
     width: 100wh;
-    background-image: url(https://images.unsplash.com/photo-1542598972-0d766c1115fd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-image: url(https://images.unsplash.com/photo-1542598972-0d766c1115fd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-image: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=820&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* .main {
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
 }
 
 ul li {
     display: inline;
     padding: 25px;
     color: rgb(255,255,255);
+}
+
+a {
     text-decoration: none;
 }
 
@@ -31,26 +44,37 @@ button {
     background-color: transparent;
     color: white;
     padding: 10px;
-    width: 100px;
-    /* border: none; */
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
     border-color: white;
+    transition: 0.5s ease;
 }
 
 button:hover {
     cursor: pointer;
     background-color: purple;
     border: none;
+    transform: scale(0.9);
+    transition: 0.5s ease;
 }
 
 .login-form {
     height: 400px;
     width: 320px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.1);
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 15px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
+.login-form:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
 #user-pic {
     height: 5em;
     width: 5em;
@@ -72,7 +96,11 @@ button:hover {
     margin-left: 2em;
     width: 18em;
     padding: 0.9em;
-    background-color: transparent   ;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
 }
 
 #email-inp:hover, #password-inp:hover {
@@ -80,13 +108,13 @@ button:hover {
 }
 
 input::placeholder {
-    color: purple;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
 }
 
 #forgot {
     margin-left: 2.2em;
-    color: purple;
+    color: white;
 }
 
 #forgot:hover, #checkbox-inp:hover {
@@ -103,17 +131,25 @@ input[type="checkbox"]{
 }
 
 label {
-    color: purple;
+    /* color: purple; */
 }
 
 #login-btn {
-    background-color: purple;
+    background: linear-gradient(90deg,rgb(68, 0, 68),rgba(255, 0, 255, 0.678));
     color: #ffffff;
     position: absolute;
     margin-left: 1.9em;
     width: 20em;
     padding: 0.9em;
     border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#login-btn:hover {
+    transform: scale(0.9);
+    transition: 0.5s ease;
 }
 
 .signup {
@@ -131,7 +167,7 @@ label {
 
 #email-icon, #password-icon {
     position: absolute;
-    margin-left: 2.3em;
+    margin-left: -2em;
     margin-top: 0.8em;
     color: black;
 }

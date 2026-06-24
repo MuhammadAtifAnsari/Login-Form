@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Register Form</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -11,31 +11,32 @@
     <header>
         <nav>
             <h1>CodingLab</h1>
-            <ul>
+            <!-- <ul>
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>Product</li></a>
                 <a href="#"><li>Services</li></a>
                 <a href="#"><li>Contact</li></a>
-            </ul>
-            <button>Login</button>
+            </ul> -->
+            <a href="./pages/login/login.html" target="_blank"><button>Login</button></a>
         </nav>
     </header>
     
-    <main>
+    <main class="main">
         <form class="login-form" id="register-form">
+            <br>
             <!--img-->
             <div id="user-pic"></div>
             <!--inputs--> 
             <div class="inputs">
                 <div>
                     <!-- <div id="email-icon">"><i class="fa-solid fa-envelope"></div> -->
-                    <span id="email-icon"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" id="email-inp" placeholder="     Enter your email">
+                        <input type="email" id="email-inp" placeholder="Enter your email">
+                        <span id="email-icon"><i class="fa-solid fa-envelope"></i></span>
                 </div>
                 <br>
                 <div>
+                    <input type="password" id="password-inp" placeholder="Enter your password">
                     <span id="password-icon"><i class="fa-solid fa-passport"></i></span>
-                    <input type="password" id="password-inp" placeholder="    Enter your password">
                 </div>
                 <br>
                 <div>
@@ -48,12 +49,12 @@
                 <div>
                     <input type="submit" value="register" id="login-btn">
                     <!-- <button id="login-btn">Login Now</button> -->
-                    <br><br><br>
                 </div>
-                <div class="signup">
+                <br>
+                <!-- <div class="signup">
                     <span id="member">Not a member?</span>
                     <span id="signup">Signup Now</span>
-                </div>
+                </div> -->
 
             </div>
         </form>
@@ -61,4 +62,4 @@
     </main>
     <script type="module" src="./app.js"></script>
 </body>
-</html>
+</h

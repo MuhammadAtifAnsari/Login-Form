@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    /* background-color: red; */
+}
+
+/* ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+} */
+
+#signout-btn, #delete-btn {
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    /* transition: 0.9s ease; */
+}
+
+#signout-btn {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#signout-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+#delete-btn:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 45px;
+}

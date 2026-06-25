@@ -6,8 +6,7 @@ let registerForm = document.getElementById("register-form");
 
 let formValidation = () => {
     if (emailInp.value.length < 1 || passwordInp.value.length < 1) {
-        console.error(new Error("all fields must be failed!"));
-        alert("all fields must be failed!");
+        console.error(new Error("all fields must be failed!")); // alert("all fields must be failed!");
         return false;
     }
 
@@ -34,13 +33,11 @@ let loginUser = async() => {
             console.log(user);
             // alert('account login');
         })
-        window.location.replace('./pages/dashbord/dashbord.html');
-
+        window.location.replace('./pages/dashbord/dashbord.html');    // window.location.replace('/Login-Form/pages/dashbord/dashbord.html');
     } catch (error) {
         console.error(error);
     }
 }
-
 
 registerForm.addEventListener("submit", (e) => {
     e.preventDefault();

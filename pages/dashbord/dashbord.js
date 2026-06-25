@@ -11,8 +11,7 @@ let userSignOut = async () => {
           // Sign-out successful.
           console.log('Sign-out successful.');
         //   window.location.href = '../../../index.html';
-          window.location.replace('../../../index.html');
-          
+          window.location.replace('../../../index.html');  
         })
     } catch (error) {
         console.log(error);
@@ -32,6 +31,7 @@ let userDelete = async () => {
           // User deleted.
           console.log('user deleted!');
           window.location.replace('../../../index.html');
+        // window.location.replace('/Login-Form/index.html');
         })
     } catch (error) {
         console.log('user delete error =>', error);
@@ -39,8 +39,6 @@ let userDelete = async () => {
 }
 
 deleteBtn.addEventListener('click', () => userDelete());
-
-
 
 
 // GSAP ANIMATION

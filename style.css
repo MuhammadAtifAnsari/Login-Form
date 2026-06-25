@@ -3,21 +3,12 @@ body {
     padding: 0%;
     height: 100vh;
     width: 100wh;
-    /* background-image: url(https://images.unsplash.com/photo-1542598972-0d766c1115fd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
-    background-image: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=820&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(./assets/background.avif);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* .main {
-    height: 100vh;
-    width: 100wh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 nav {
     display: flex;
@@ -49,6 +40,7 @@ button {
     font-size: 16px;
     border-color: white;
     transition: 0.5s ease;
+    font-weight: bold;
 }
 
 button:hover {
@@ -130,10 +122,6 @@ input[type="checkbox"]{
   accent-color: purple;
 }
 
-label {
-    /* color: purple; */
-}
-
 #login-btn {
     background: linear-gradient(90deg,rgb(68, 0, 68),rgba(255, 0, 255, 0.678));
     color: #ffffff;
@@ -145,6 +133,7 @@ label {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s ease;
+    font-weight: bold;
 }
 
 #login-btn:hover {
@@ -169,7 +158,7 @@ label {
     position: absolute;
     margin-left: -2em;
     margin-top: 0.8em;
-    color: black;
+    color: white;
 }
 
 /* media queries */

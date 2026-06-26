@@ -2,7 +2,7 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-analytics.js";
   import { getAuth,createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, deleteUser } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-auth.js";
-  import { getFirestore, collection, addDoc,  doc, setDoc, getDocs, deleteDoc } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
+  import { getFirestore, collection, addDoc,  doc, setDoc, getDocs, deleteDoc, query, where, } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-firestore.js";
 
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -30,4 +30,4 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 
-export { collection, addDoc, db, getFirestore,  doc, setDoc, getDocs, deleteDoc, auth, getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, deleteUser }
+export { collection, addDoc, db, getFirestore,  doc, setDoc, getDocs, deleteDoc, auth, getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, deleteUser, query, where }

@@ -35,6 +35,7 @@ let loginUser = async () => {
                 // let userUid = JSON.stringify(user.uid);
                 // Window.localStorage.setItem("uid",userUid);
 
+                window.localStorage.setItem('uid', JSON.stringify(user.uid));
                 window.location.replace('../dashbord/dashbord.html');   // window.location.replace('/Login-Form/pages/dashbord/dashbord.html');                
               });
     } catch (error) {

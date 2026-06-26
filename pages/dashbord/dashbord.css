@@ -43,3 +43,49 @@ nav {
 h1 {
     font-size: 45px;
 }
+
+.container {
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.post-div {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    /* text-decoration: overline; */
+    text-decoration: underline;
+    background: linear-gradient(to right, #e20505, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media screen and (max-width:425px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #signout-btn, #delete-btn {
+        width: 100px;
+    }
+
+    nav {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    #signout-btn, #delete-btn {
+        width: 85px;
+        height: 40px;
+    }
+}
